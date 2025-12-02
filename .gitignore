@@ -11,3 +11,4 @@ Debug*/Debug*\ Libs
 *.obsolete*
 Debug*
 bin/
+models/
