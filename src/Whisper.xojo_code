@@ -1,5 +1,12 @@
 #tag Module
 Protected Module Whisper
+	#tag Constant, Name = WHISPER_SAMPLING_BEAM_SEARCH, Type = , Dynamic = False, Default = \"1", Scope = Public
+	#tag EndConstant
+
+	#tag Constant, Name = WHISPER_SAMPLING_GREEDY, Type = , Dynamic = False, Default = \"0", Scope = Public
+	#tag EndConstant
+
+
 	#tag Structure, Name = ContextParams, Flags = &h0
 		use_gpu As Boolean
 		gpu_device As Int32
@@ -82,6 +89,7 @@ Protected Module Whisper
 
 	#tag Enum, Name = ErrorEnum, Flags = &h0
 		ContextFailure = 1
+		TranscriptionError = 2
 	#tag EndEnum
 
 
